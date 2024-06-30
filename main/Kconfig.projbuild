@@ -1,0 +1,16 @@
+menu "Example Configuration"
+
+    choice EPAPER_TYPE
+        prompt "E-Ink display type"
+        default EINK_TYPE_BW
+        help
+            The type of E-Ink display
+
+        config EINK_TYPE_BW
+            bool "Black and white E-Ink display"
+        config EINK_TYPE_BW_RED
+            bool "Black, white and red E-Ink display"
+    endchoice
+
+
+endmenu
